@@ -1,0 +1,46 @@
+.contact__info {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__txt {
+  max-width: 430px;
+  width: 100%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact__btn {
+  width: 125px;
+  height: 50px;
+  background-color: #4A4FF2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+}
+.contact__btn:hover {
+  background-color: #ffb22d;
+}
+
+input {
+  width: 475px;
+  height: 37px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  border: none;
+  border-bottom: 1px solid #bbb;
+}
+/*# sourceMappingURL=contact.css.map */

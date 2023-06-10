@@ -1,0 +1,40 @@
+.navbar {
+    max-width: 1110px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-row: 1fr;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.name {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+}
+
+.navbar__name {
+    grid-area: 1/1/2/2;
+}
+
+ul {
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+
+.nav__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+}

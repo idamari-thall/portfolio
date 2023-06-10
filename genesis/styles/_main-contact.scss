@@ -1,0 +1,13 @@
+ .contact {
+
+     &__info {
+         height: 400px;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     &__txt {
+         max-width: 430px;
+         width: 100%;
+     }
+ }

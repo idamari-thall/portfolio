@@ -1,0 +1,44 @@
+@use 'fonts';
+
+
+.contact {
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__btn {
+        width: 125px;
+        height: 50px;
+        background-color: fonts.$highlighted-color;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    &__btn:hover {
+        background-color: fonts.$btn-hover-color;
+    }
+
+}
+
+input {
+    width: 475px;
+    height: 37px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    border: none;
+    border-bottom: 1px solid #bbb;
+}
