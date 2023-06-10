@@ -1,0 +1,64 @@
+@use 'fonts';
+
+.btn,
+.btn--search {
+    background-color: fonts.$decoration-color;
+    width: 228px;
+    height: 63px;
+    border: none;
+    font-family: fonts.$secondary-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.link--btn {
+    color: fonts.$primary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn--search {
+    border: 2px solid #fff;
+    margin: 0px;
+}
+
+.btn:hover {
+    background-color: fonts.$btn-hover-color;
+    transform: scale(1.03);
+    transition: all 0.9s;
+    transition-delay: 0.1s;
+}
+
+.btn--search:hover {
+    background-color: fonts.$btn-hover-color;
+    transition: all 0.9s;
+    transition-delay: 0.1s;
+}
+
+.btn:focus,
+.btn--search:focus {
+    background-color: #0829bd;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .btn,
+    .btn--search {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 20px;
+    }
+
+    .btn--search {
+        border: none;
+
+    }
+}

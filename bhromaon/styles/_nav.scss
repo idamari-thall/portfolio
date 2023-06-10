@@ -1,0 +1,83 @@
+@use 'fonts';
+
+.nav {
+    overflow: hidden;
+    background-color: fonts.$decoration-color;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    &__item {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    &__logo {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__logo-link:hover {
+        color: fonts.$text-color-first;
+    }
+
+    &__list {
+        padding-inline-start: 0;
+    }
+
+    &__link {
+        font-family: fonts.$secondary-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        font-weight: 600;
+    }
+
+    &__link:focus {
+        color: fonts.$link-focus-color;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        position: static;
+
+        &__navbar {
+            flex-direction: column;
+        }
+
+        &__item {
+            float: none;
+            width: 100%;
+            padding: 5px;
+        }
+
+    }
+}

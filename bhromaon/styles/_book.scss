@@ -1,0 +1,73 @@
+@use 'fonts';
+
+.container-book1 {
+    background-image: url(../images/pool.png);
+    align-items: flex-start;
+}
+
+.container-book2 {
+    background-image: url(../images/ocean.png);
+    align-items: flex-end;
+}
+
+.container-book {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+
+
+    &__country {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+        color: fonts.$text-color-first;
+    }
+}
+
+.card--book {
+    background-color: fonts.$background-color-card;
+    opacity: 0.9;
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+    padding: 50px 30px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container-book {
+        height: 500px;
+    }
+
+    .card--book {
+        width: 50%;
+        height: 300px;
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-book {
+
+        &__country {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .card--book {
+        width: 70%;
+        height: 330px;
+    }
+}

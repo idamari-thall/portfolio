@@ -1,0 +1,112 @@
+@use 'fonts';
+
+
+.header {
+    background-image: url(../images/cliff-big.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 740px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 26px;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 6.82px;
+    }
+
+    &__search {
+        margin: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__input {
+        width: 500px;
+        height: 57px;
+        border: 2px solid #fff;
+        font-family: fonts.$primary-font-family;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 2.8px;
+        color: #999999;
+    }
+
+    &__scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__link {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 2.8px;
+    }
+
+    &__link:hover {
+        font-weight: 600;
+    }
+
+    &__link:focus {
+        color: fonts.$link-focus-color;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .header {
+        height: 500px;
+
+        &__title {
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        &__input {
+            width: 300px;
+            height: 30px;
+            border: 1px;
+            letter-spacing: 1.2px;
+        }
+
+        &__search {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+
+}

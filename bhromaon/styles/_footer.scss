@@ -1,0 +1,66 @@
+@use 'fonts';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-footer {
+    height: 271px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    &__logo {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 3.36px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__slogan {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 1.6px;
+        margin-top: 0px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline-start: 0;
+        max-width: 166px;
+        width: 100%;
+        margin-bottom: 40px;
+        //FRÅGA: Av någon anledning som jag inte kom på hamnade iconerna inte helt i mitten 
+        //Det är därför jag la till margin på högra sidan. Vet du varför det blev så?
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__icon {
+        color: fonts.$primary-color;
+    }
+
+    &__icon:hover {
+        color: fonts.$btn-hover-color;
+    }
+
+    &__icon:focus {
+        color: fonts.$link-focus-color;
+    }
+}
