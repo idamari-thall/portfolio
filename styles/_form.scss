@@ -1,0 +1,53 @@
+input {
+    width: 100%;
+    height: 55px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid fonts.$border-color-input;
+    outline: none;
+    background-color: fonts.$background-color-input;
+    color: fonts.$secondary-txt-color;
+}
+
+input:focus,
+textarea:focus {
+    background-color: fonts.$primary-color;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid fonts.$border-color-input;
+    background-color: fonts.$background-color-input;
+    resize: none;
+    color: fonts.$secondary-txt-color;
+}
+
+button {
+    width: 200px;
+    height: 80px;
+    border: 2px solid fonts.$border-color-input;
+    background-color: fonts.$background-color-input;
+    color: fonts.$secondary-txt-color;
+}
+
+button:hover {
+    .fa-paper-plane {
+        transform: rotate(45deg);
+        color: fonts.$primary-color;
+        transition-delay: 0.2s;
+    }
+}
+
+button:focus {
+    background-color: fonts.$background-color;
+}
+
+::placeholder {
+    color: fonts.$secondary-txt-color;
+    letter-spacing: 0.3em;
+}

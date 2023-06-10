@@ -1,0 +1,15 @@
+@use 'fonts';
+
+@import 'main';
+@import 'nav';
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: fonts.$background-color;
+    color: fonts.$primary-txt-color;
+    font-family: fonts.$primary-font-family;
+    min-height: 3500px;
+}

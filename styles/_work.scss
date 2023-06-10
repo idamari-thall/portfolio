@@ -1,0 +1,128 @@
+.container-work {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 700px;
+    padding: 10px;
+    background-color: fonts.$primary-color;
+
+
+    &__flexbox {
+        max-width: 1400px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        box-sizing: border-box;
+        width: 300px;
+        height: 500px;
+        border: 2px solid fonts.$primary-txt-color;
+        margin: 20px;
+        padding: 5px;
+        background-color: fonts.$background-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    &__txt {
+        align-self: flex-start;
+        padding: 0 10px;
+    }
+
+}
+
+.img--project {
+    width: 280px;
+    height: auto;
+    filter: grayscale(1);
+}
+
+.img--project:hover {
+    filter: grayscale(0);
+    transition: 0.8s;
+}
+
+.genesis {
+    width: 130px;
+}
+
+.btn--work {
+    width: 200px;
+    height: 50px;
+    background-color: fonts.$primary-color;
+    align-self: end;
+}
+
+.btn--work:hover {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: fonts.$btn-hover-color;
+    transition-delay: 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: fonts.$secondary-txt-color;
+    text-transform: uppercase;
+    font-family: fonts.$primary-font-family;
+}
+
+.fa-square {
+    color: #501c65;
+}
+
+
+
+
+
+
+
+
+// .container-work {
+//     max-width: 2100px;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 30px;
+
+//     &__project {
+//         max-width: 1200px;
+//         width: 100%;
+//         height: 350px;
+//         border: 2px solid fonts.$secondary-color;
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: center;
+
+//     }
+
+//     &__txt {
+//         box-sizing: border-box;
+//         max-width: 600px;
+//         width: 100%;
+//         height: 100%;
+//         padding: 20px;
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     &__img {
+//         max-width: 600px;
+//         width: 100%;
+//         height: 100%;
+
+//         background-color: fonts.$secondary-color;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//     }
+// }

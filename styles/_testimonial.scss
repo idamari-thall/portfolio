@@ -1,0 +1,17 @@
+.container-testimonial {
+    min-height: 500px;
+    padding: 30px;
+
+    &__item {
+        max-width: 800px;
+        width: 100%;
+        min-height: 150px;
+        border: 3px solid fonts.$primary-color;
+        padding: 20px;
+    }
+
+    &__txt {
+        font-style: italic;
+    }
+
+}

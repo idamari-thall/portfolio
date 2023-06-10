@@ -1,0 +1,69 @@
+@import 'form';
+@import 'footer';
+
+.container-contact {
+    box-sizing: border-box;
+    background-image: url(../images/vipers-bugloss.jpg);
+    //dan evensen
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    font-family: fonts.$primary-font-family;
+
+    &__text {
+        color: fonts.$secondary-txt-color;
+    }
+
+    &__info {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__form {
+        box-sizing: border-box;
+        max-width: 1200px;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px;
+        padding: 30px;
+        border: 2px solid fonts.$border-color-input;
+    }
+
+    &__input {
+        max-width: 1100px;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    &__item {
+        max-width: 500px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.contact--filter {
+    height: 600px;
+    width: 100%;
+    background-color: fonts.$secondary-color;
+    filter: opacity(0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}

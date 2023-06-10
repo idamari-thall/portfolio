@@ -1,0 +1,35 @@
+.container-footer {
+    max-width: 2100px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline-start: 0;
+        width: 250px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__icon {
+        color: fonts.$secondary-txt-color;
+    }
+
+    &__icon:hover {
+        color: fonts.$primary-color;
+        transition-delay: 0.2s;
+    }
+
+    &__icon:focus {
+        color: fonts.$link-focus-color;
+    }
+}

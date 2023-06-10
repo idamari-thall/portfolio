@@ -1,0 +1,53 @@
+.nav {
+    //overflow: hidden;
+    width: 100%;
+
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: -20px;
+    z-index: 1;
+    background-color: fonts.$background-color;
+
+    // &__navbar {
+    //     
+    // }
+
+    &__list {
+        padding-inline-start: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        //justify-content: space-around;
+        //fungerar inte, förstår inte varför
+        max-width: 1800px;
+        width: 100%;
+        height: 40px;
+    }
+
+    &__item {
+        float: left;
+        display: block;
+        // text-align: center;
+        padding: 0 20px;
+    }
+
+    &__link {
+        color: fonts.$primary-txt-color;
+        font-style: normal;
+        font-weight: 400;
+        // font-size: 1.1em;
+        // line-height: 26px;
+        //text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: fonts.$primary-color;
+    }
+
+    &__link:focus {
+        color: fonts.$secondary-color;
+    }
+
+}

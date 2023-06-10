@@ -1,0 +1,32 @@
+.container-header {
+    background-image: url("../images/me-namibia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 2100px;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__item {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    &__title {
+        max-width: 400px;
+    }
+
+    &__filter {
+        height: 650px;
+        width: 100%;
+        background-color: fonts.$secondary-color;
+        filter: opacity(0.85);
+        position: absolute;
+    }
+}
