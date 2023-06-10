@@ -1,0 +1,32 @@
+@use 'fonts';
+
+
+.logo {
+    max-width: 12%;
+    position: fixed;
+}
+
+
+.nav {
+    display: block;
+    width: 70%;
+    margin: 30px 15% 0 15%;
+
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__link {
+        color: #501c65;
+        font-family: fonts.$main-font;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.2s;
+        font-size: 30px;
+    }
+
+    &__link:hover {
+        color: #c7a194;
+    }
+}

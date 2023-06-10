@@ -1,0 +1,14 @@
+@use 'fonts';
+
+.footer__contact {
+
+    display: flex;
+    justify-content: end;
+
+    &__info {
+        font-family: fonts.$main-font;
+        font-size: 15px;
+        color: fonts.$main-txt-color;
+        margin: 20px;
+    }
+}

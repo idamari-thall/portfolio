@@ -1,0 +1,29 @@
+@use 'fonts';
+
+/*font-family: 'Ms Madi', cursive;
+font-family: 'Raleway', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Raleway:wght@100;400;600&display=swap');
+@import 'header';
+@import 'footer';
+
+$bg-color: #F5EFFF;
+
+body {
+    background-color: $bg-color;
+}
+
+.page-title {
+    font-family: fonts.$decoration-font;
+    font-size: 70px;
+    color: fonts.$page-title-color;
+    text-align: center;
+    margin: 50px;
+    padding: 10px
+}
+
+.txt {
+    font-family: fonts.$main-font;
+    font-size: 22px;
+    color: fonts.$main-txt-color;
+}
